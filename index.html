@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4f2e8">
+  <meta name="description" content="HULHUP — audio acak, tap counter.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>HULHUP</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="HULHUP">
+        <img src="assets/logo.svg" alt="" class="brand-mark">
+        <span>HULHUP</span>
+      </a>
+      <a class="nav-pill" href="about.html" aria-label="Tentang">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 10.5v5M12 7.8h.01"/></svg>
+        <span>Tentang</span>
+      </a>
+    </header>
+
+    <svg class="divider" viewBox="0 0 1200 2" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="1" x2="1200" y2="1"/>
+    </svg>
+
+    <main class="home-main">
+      <div class="speaker-wrap">
+        <button class="speaker-button" id="speakerButton" type="button" aria-label="Putar audio">
+          <span class="button-rim"></span>
+          <span class="button-surface"></span>
+          <span class="ripple ripple-a"></span>
+          <span class="ripple ripple-b"></span>
+          <svg class="speaker-icon" viewBox="0 0 120 120" aria-hidden="true">
+            <path d="M26 49h18l19-16v54L44 71H26z"/>
+            <path d="M73 45c6 6 6 24 0 30M84 37c12 12 12 34 0 46"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="counter-pill" aria-live="polite">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="7" y="4.5" width="10" height="15" rx="2"/>
+          <path d="M10 7h4M11 16.5h2"/>
+        </svg>
+        <span>Tap di perangkatmu <strong id="counter">0</strong>×</span>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
